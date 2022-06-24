@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import Calculator from './Components/Calculator';
+import Screen from './Components/Screen';
+import ButtonBox from './Components/ButtonBox';
+import Button from './Components/Button';
 
-function App() {
+const btnValues = [
+  ['C', 'DEL', '÷', 'X'],
+  [7, 8, 9, '-'],
+  [4, 5, 6, '+'],
+  [1, 2, 3, '='],
+  [0, '.'],
+];
+
+console.log(btnValues[0]);
+
+// const value = JSON.stringify(btn(i));
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Calculator>
+      <Screen value='0' />
+      <ButtonBox>
+        {btnValues.flat().map((btn, i) => {
+          return (
+            <Button
+              key={i}
+              className={
+                btn === '=' ? 'equals' : '' || btn == '0' ? 'zero' : ''
+              }
+              value={btn}
+              onClick={() => {
+                console.log(`${btn} clicked!`);
+              }}
+            />
+          );
+        })}
+      </ButtonBox>
+    </Calculator>
   );
-}
+};
 
 export default App;

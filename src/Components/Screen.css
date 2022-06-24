@@ -1,0 +1,13 @@
+.calculator__screen {
+  height: 100px;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  box-sizing: border-box;
+  background-color: rgb(149, 167, 116);
+}
