@@ -1,8 +1,10 @@
 .calculator__container {
-  width: 340px;
-  height: 540px;
-  padding: 10px;
-  border-radius: 10px;
+  width: 440px;
+  height: 640px;
+  padding: 1.25rem;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(34, 34, 34, 0.8);
+  box-shadow: 5px 5px 15px 5px rgba(34, 34, 34, 0.8);
+  border-radius: 15px;
   background: rgb(59, 59, 59);
   background: linear-gradient(
     90deg,
