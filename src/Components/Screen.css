@@ -2,12 +2,18 @@
   height: 130px;
   width: 100%;
   padding: 0 10px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   color: white;
   box-sizing: border-box;
-  background-color: rgb(149, 167, 116);
+}
+
+@media screen and (min-width: 429px) {
+  .calculator__screen {
+    background-color: rgb(149, 167, 116);
+    margin-bottom: 1.5rem;
+  }
 }

@@ -119,7 +119,7 @@ const App = () => {
           return (
             <Button
               key={i}
-              className={`btn__${i}`}
+              className={`btn btn__${i}`}
               value={btn}
               onClick={
                 btn === 'C'
